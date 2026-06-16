@@ -15,6 +15,7 @@ echo "→ Installing Claude Code aliases into $SHELL_RC..."
 ALIASES=$(cat <<'EOF'
 
 # Claude Code aliases
+alias ccf5='claude --dangerously-skip-permissions --model claude-fable-5'
 alias ccs='claude --dangerously-skip-permissions --model sonnet'
 alias cco='claude --dangerously-skip-permissions --model claude-opus-4-6'
 alias cch='claude --dangerously-skip-permissions --model haiku'
@@ -35,4 +36,4 @@ echo "✅ Done! Open a new terminal or run:"
 echo "   zsh:  source ~/.zshrc"
 echo "   bash: source ~/.bash_profile"
 echo ""
-echo "   cco → Opus   |   ccs → Sonnet   |   cch → Haiku"
+echo "   ccf5 → Fable 5   |   cco → Opus   |   ccs → Sonnet   |   cch → Haiku"
